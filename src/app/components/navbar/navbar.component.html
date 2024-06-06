@@ -1,0 +1,11 @@
+<header>
+  <nav class="nav">
+    <img src="./logo.png" class="logo">
+    <ul class="nav-list">
+      <li class="nav-item" *ngFor="let item of menu">
+        <button class="btn btn-header {{item.id}}" id="{{item.id}}"
+                (click)="onButtonClick(item.id)">{{item.name}}</button>
+      </li>
+    </ul>
+  </nav>
+</header>
